@@ -13,15 +13,7 @@ import certifi
 from pymongo import MongoClient 
 
 
-"""# Application configuration and environment-based secret keys
-app = Flask(__name__)
-app.secret_key = os.environ.get("CYPHRA_SECRET_KEY", "b3af9281cda1426ea9e1e55d5bb26cf4042617a2ee34")
 
-# File path definitions and database connection URI
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-#RULES_FILE = os.path.join(BASE_DIR, 'rules.json')
-MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://cyphra_admin:CHih3HTF-2am6Hm@cyphra-prod.hb4os4r.mongodb.net/cyphra-prod?appName=cyphra-prod")
-"""
 # Application configuration utilizing strict environment injection
 app = Flask(__name__)
 load_dotenv()
